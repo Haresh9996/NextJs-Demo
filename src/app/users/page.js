@@ -1,8 +1,9 @@
 import Link from "next/link"
 import Delete from "@/utils/Delete"
+import { apiUrl } from "@/utils/api"
 
 async function fetchData() {
-    let data = await fetch("http://localhost:3000/api")
+    let data = await fetch(`${apiUrl}/api`)
     data = await data.json()
     return data
 }

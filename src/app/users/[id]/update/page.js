@@ -1,5 +1,6 @@
 "use client"
 import { useEffect, useState } from "react";
+import { apiUrl } from "@/utils/api";
 export default function Update({ params }) {
     let userId = params.id
     // console.log(id)
@@ -37,7 +38,7 @@ export default function Update({ params }) {
 
     const getData = async () => {
 
-        let response = await fetch(`http://localhost:3000/api/${userId}`)
+        let response = await fetch(`${apiUrl}/api/${userId}`)
 
         let finalResponse = await response.json()
 

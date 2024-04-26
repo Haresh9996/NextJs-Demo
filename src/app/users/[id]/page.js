@@ -1,5 +1,7 @@
+import { apiUrl } from "@/utils/api"
+
 async function getData(id) {
-    let data = await fetch(`http://localhost:3000/api/${id}`)
+    let data = await fetch(`${apiUrl}/api/${id}`)
     console.log(data.data)
     let finalData = await data.json()
     return finalData

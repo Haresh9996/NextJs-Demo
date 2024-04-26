@@ -5,6 +5,7 @@ import { apiUrl } from "@/utils/api"
 async function fetchData() {
     let data = await fetch(`${apiUrl}/api`)
     data = await data.json()
+    console.log(data)
     return data
 }
 export default async function page() {

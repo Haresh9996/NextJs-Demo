@@ -1,15 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    // output: "export",
-    // redirects:async()=>{
-    //     return[
-    //         {
-    //             source: '/api/users',
-    //             destination: '/productlist',
-    //             permanent: false
-    //         }
-    //     ]
-    // }
+    env: {
+        NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL,
+        
+    },
 };
 
 export default nextConfig;

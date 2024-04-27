@@ -1,5 +1,5 @@
 import Link from "next/link"
-
+import { Button } from "@nextui-org/react"
 async function fetchData() {
     let data = await fetch("https://dummyjson.com/products")
 
@@ -37,7 +37,7 @@ const page = async () => {
                                                 </div>
                                             </div>
 
-                                            <button className="border border-1 p-3 rounded ml-auto ">Buy Now</button>
+                                            <Button className="border border-1 p-3 rounded ml-auto ">Buy Now</Button>
 
                                         </div>
                                     </div>

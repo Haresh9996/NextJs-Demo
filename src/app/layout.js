@@ -2,6 +2,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Nav from "./Nav"; // Correct file path for importing Nav component
+import { NextUIProvider } from "@nextui-org/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,10 +19,12 @@ export default function RootLayout({ children }) {
         <style>{inter.css}</style>
       </head>
       <body className={inter.className}>
-        {/* Include the Nav component */}
-        <Nav />
-        {/* Render children */}
-        {children}
+
+        <NextUIProvider>
+          <Nav />
+          {children}
+        </NextUIProvider>
+
       </body>
     </html>
   );

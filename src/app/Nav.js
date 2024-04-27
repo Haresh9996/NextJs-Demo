@@ -16,8 +16,8 @@ const Nav = () => {
                         <Link href="/home" className="mr-5 hover:text-gray-500">Home</Link>
                         <Link href="/productlist" className="mr-5 hover:text-gray-500">Productlist</Link>
                         <Link href="/about" className="mr-5 hover:text-gray-500">About</Link>
-                        <Link href="/contact" className="mr-5 hover:text-gray-500">Contact</Link>
-                        <Link href="/adduser" className="mr-5 hover:text-gray-500">User Clients</Link>
+                        <Link href="/users" className="mr-5 hover:text-gray-500">Users List</Link>
+                        <Link href="/adduser" className="mr-5 hover:text-gray-500">Add User</Link>
                         <Link href="/api" className="mr-5 hover:text-gray-500">Api</Link>
                     </nav>
                 </div>
